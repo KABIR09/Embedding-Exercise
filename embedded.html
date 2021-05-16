@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tableau Embedded</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  </head>
+  <link rel = "icon" href="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"
+        type = "image/x-icon">
+  <link rel="stylesheet" href="style.css">
+
+  <script 
+        type="text/javascript"
+        src="https://public.tableau.com/javascripts/api/tableau-2.min.js">
+  </script>
+
+  <body>
+    <nav class="navbar navbar-default" id="second">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed" aria-expanded="false" data-target="#bs-nav-demo" data-toggle="collapse">
+            <span class="sr-only">Toggle Navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" style="color: black;">Embedded Analytics with Tableau</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-nav-demo">
+          <ul class="nav navbar-nav">
+            <li><a href="https://help.tableau.com/current/api/js_api/en-us/JavaScriptAPI/js_api.htm#:~:text=Use%20the%20Tableau%20JavaScript%20API,into%20your%20own%20web%20applications.&text=Display%20visualizations%20from%20Tableau%20Server,Dynamically%20load%20and%20resize%20visualizations.">About</a></li>
+            <li><a href="https://www.tableau.com/about/contact">Contact</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://public.tableau.com/s/">Sign up</a></li>
+            <li><a href="https://public.tableau.com/s/">Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<!-- Default Navbar -->
+
+<nav class="navbar navbar-default" id="first">
+  <div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar collapse-1">
+      <ul class="nav navbar-nav">
+        <li ><button id="btn">Click to Hide</button></li>
+        <li><button id="showbtn">Click to Show</button></li>
+          <li> <button id="exportPDF"><p>Export PDF</p></button></li>
+          <li><button id="exportIMAGE"><p>Export Image</p></button></li>
+          <button id="start">Dynamic Load</button>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+<div id="vizContainer"></div>
+<script src="./api.js"></script>
+
+
+
+  <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </body>
+</html>
